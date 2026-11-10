@@ -8,11 +8,11 @@
 
 | Name | Student ID | Tutorial group | GitHub username |
 |---|---|---|---|
-| [Mariam Sharafeldin] | [16003172] | [T6] | [mwaelsharaf-commits] |
-| [Joumana Khalifa] |    [16001343] | [T1] | [joumanakhalifa1705-oss] |
-| [Ranim Ahmed] |        [16003255] | [T6] | [ranim-ahmed] |
-| [Rauan Mahmoud] |      [16003873] | [T6] | [rauanmahmoudd-prog]|
-| [Elena Roger] |        [⁠16007757] | [T1] | [elenacharouty-arch] |
+| Mariam Sharafeldin | 16003172 | T6 | mwaelsharaf-commits |
+| Joumana Khalifa |    16001343 | T1 | joumanakhalifa1705-oss|
+| Ranim Ahmed |        16003255 | T6 | ranim-ahmed |
+| Rauan Mahmoud |      16003873 | T6 | rauanmahmoudd-prog|
+| Elena Roger |        ⁠1600775 | T1 | elenacharouty-arch |
 
 ## 2. The idea
 
