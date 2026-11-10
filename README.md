@@ -12,11 +12,11 @@
 | Joumana Khalifa |    16001343 | T1 | joumanakhalifa1705-oss|
 | Ranim Ahmed |        16003255 | T6 | ranim-ahmed |
 | Rauan Mahmoud |      16003873 | T6 | rauanmahmoudd-prog|
-| Elena Roger |        ⁠1600775 | T1 | elenacharouty-arch |
+| Elena Roger |        1600775 | T1 | elenacharouty-arch |
 
 ## 2. The idea
 
-The Unbooked is a marketplace for unused business capacity: empty appointments, tables, class spots and sessions. Service businesses such as salons, restaurants, photographers and fitness studios often have slots that stay unbooked, and every empty slot is revenue they never get back. On The Unbooked, a business publishes these slots at a discount, and customers browse and book them for less. Businesses recover revenue they would otherwise lose, and customers get the services they want at a lower price.
+Forsa is a marketplace for unused business capacity: empty appointments, tables, class spots and sessions. Service businesses such as salons, restaurants, photographers and fitness studios often have slots that stay unbooked, and every empty slot is revenue they never get back. On Forsa, a business publishes these slots at a discount, and customers browse and book them for less. Businesses recover revenue they would otherwise lose, and customers get the services they want at a lower price.
 
 ## 3. Features
 
