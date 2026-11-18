@@ -12,8 +12,7 @@ export default function Header() {
 
   return (
     <header className="header">
-      <Link to="/" className="logo">Forsa</Link>
-      {user && (
+<Link to="/" className="logo" id="project-name">Forsa</Link>      {user && (
         <div className="header-user">
           <span>{user.businessName || user.name}</span>
           <button onClick={handleLogout}>Log out</button>
