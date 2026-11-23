@@ -3,7 +3,7 @@ import express from "express";
 import { connectDB } from "./db.js";
 
 import authRoutes from "./routes/authRoutes.js";
-import slotRoutes from "./routes/slotRoutes.js";
+import businessSlotRoutes from "./routes/businessSlotRoutes.js";
 
 const app = express();
 
@@ -31,7 +31,7 @@ app.get("/", (req, res) => {
 app.use("/api/auth", authRoutes);
 
 // Business slot management
-app.use("/api/slots", slotRoutes);
+app.use("/api/business-slots", businessSlotRoutes);
 
 // Health check
 app.get("/api/health", (req, res) => {
