@@ -1,3 +1,4 @@
+
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 
@@ -12,12 +13,27 @@ export default function Header() {
 
   return (
     <header className="header">
-<Link to="/" className="logo" id="project-name">Forsa</Link>      {user && (
+
+      <Link to="/" className="logo" id="project-name">
+        Forsa
+      </Link>
+
+      {user?.role === "business" && (
+        <Link to="/business-slots">
+          Business Slots
+        </Link>
+      )}
+
+      {user && (
         <div className="header-user">
           <span>{user.businessName || user.name}</span>
-          <button onClick={handleLogout}>Log out</button>
+
+          <button type="button" onClick={handleLogout}>
+            Log out
+          </button>
         </div>
       )}
+
     </header>
   );
 }
