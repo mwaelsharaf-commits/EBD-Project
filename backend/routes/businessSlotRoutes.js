@@ -7,7 +7,7 @@ import {
   getMySlots,
   updateSlot,
   deleteSlot,
-} from "../controllers/slotController.js";
+} from "../controllers/businessSlotController.js";
 
 const router = Router();
 
