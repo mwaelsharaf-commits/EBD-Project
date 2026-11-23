@@ -128,7 +128,7 @@ export default function BusinessSlots() {
     setError("");
 
     try {
-      const data = await api("/slots/mine");
+     const data = await api("/business-slots/mine");
 
       if (!Array.isArray(data?.slots)) {
         throw new Error("Invalid response from server.");
@@ -216,16 +216,15 @@ export default function BusinessSlots() {
     setBusy(true);
 
     try {
-      const result = await api(`/slots/${editSlot._id}`, {
-        method: "PATCH",
-        body: {
-          serviceName: form.serviceName.trim(),
-          description: form.description.trim(),
-          startTime: date.toISOString(),
-          dealPrice: price,
-        },
-      });
-
+      const result = await api(`/business-slots/${editSlot._id}`, {
+  method: "PATCH",
+  body: {
+    serviceName: form.serviceName.trim(),
+    description: form.description.trim(),
+    startTime: date.toISOString(),
+    dealPrice: price,
+  },
+});
       if (!result?.slot) {
         throw new Error("Invalid update response.");
       }
@@ -252,10 +251,9 @@ export default function BusinessSlots() {
     setError("");
 
     try {
-      await api(`/slots/${deleteSlot._id}`, {
-        method: "DELETE",
-      });
-
+     await api(`/business-slots/${deleteSlot._id}`, {
+  method: "DELETE",
+});
       setSlots((previous) =>
         previous.filter(
           (slot) => slot._id !== deleteSlot._id
