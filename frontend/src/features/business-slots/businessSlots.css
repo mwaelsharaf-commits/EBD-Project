@@ -1,0 +1,531 @@
+
+/* FORSA BUSINESS SLOTS */
+
+.business-slots-page {
+  min-height: calc(100vh - 65px);
+  padding: 36px 20px;
+  background: #f6eee4;
+  color: #1f2a27;
+  font-family: "Nunito", sans-serif;
+}
+
+.business-slots-panel {
+  max-width: 1020px;
+  margin: auto;
+  padding: 25px 24px 19px;
+  background: #fffaf6;
+  border: 1px solid #e7ded5;
+  border-radius: 25px;
+  box-shadow:
+    0 6px 18px rgba(64, 43, 25, 0.08),
+    0 16px 35px rgba(64, 43, 25, 0.05);
+}
+
+/* HEADER */
+
+.business-slots-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 23px;
+}
+
+.business-slots-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.business-slots-title > svg {
+  color: #164d46;
+  flex-shrink: 0;
+}
+
+.business-slots-title h1 {
+  margin: 0;
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #172624;
+}
+
+.business-slots-title p {
+  margin: 5px 0 0;
+  font-size: 13px;
+  color: #5f6864;
+}
+
+.business-publish-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 11px 19px;
+  border-radius: 25px;
+  background: linear-gradient(
+    140deg,
+    #2a786d,
+    #124c44
+  );
+  box-shadow: 0 4px 10px rgba(28, 81, 75, 0.19);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.business-publish-button:hover {
+  background: #143f3a;
+}
+
+/* FILTER BUTTONS */
+
+.business-slot-filters {
+  display: flex;
+  gap: 11px;
+  margin-bottom: 19px;
+}
+
+.business-slot-filters .filter {
+  min-width: 122px;
+  border: 1px solid #e8e1db;
+  padding: 10px 18px;
+  border-radius: 24px;
+  background: #faf7f4;
+  color: #222b28;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.07);
+}
+
+.business-slot-filters .filter.selected {
+  background: linear-gradient(
+    135deg,
+    #277368,
+    #124a42
+  );
+  border-color: #19584d;
+  color: white;
+}
+
+/* SLOT LIST */
+
+.business-slot-list {
+  overflow: hidden;
+  border-radius: 19px;
+  border: 1px solid #eae2db;
+  background: #fffdfb;
+}
+
+.business-slot-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 15px;
+  border-bottom: 1px solid #eee7e0;
+  background: #fffdfb;
+}
+
+.business-slot-card:last-child {
+  border-bottom: none;
+}
+
+.business-slot-card:hover {
+  background: #fff9f4;
+}
+
+/* SLOT PHOTO */
+
+.business-slot-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 91px;
+  height: 79px;
+  overflow: hidden;
+  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    #d9e8df,
+    #e9cab4
+  );
+  color: #1c514b;
+}
+
+.business-slot-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* SLOT INFORMATION */
+
+.business-slot-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.business-slot-details h3 {
+  margin: 0 0 7px;
+  color: #1c2522;
+  font-size: 17px;
+  line-height: 1.25;
+  font-weight: 800;
+}
+
+.business-slot-details p {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 5px 0;
+  color: #454b47;
+  font-size: 12px;
+}
+
+.business-slot-details p svg {
+  flex-shrink: 0;
+}
+
+.business-slot-details .business-slot-spots {
+  color: #303a35;
+  font-weight: 700;
+}
+
+.business-slot-spots svg {
+  color: #eca827;
+  fill: #eca827;
+}
+
+/* PRICES */
+
+.business-slot-prices {
+  min-width: 109px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.business-slot-prices del {
+  font-size: 12px;
+  color: #8a8985;
+}
+
+.business-slot-prices strong {
+  color: #94342f;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+/* EDIT AND DELETE */
+
+.business-slot-actions {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.business-edit-button,
+.business-delete-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  border: 0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.business-edit-button {
+  color: #1c514b;
+  background: #dfefe4;
+}
+
+.business-delete-button {
+  color: #b7353e;
+  background: #fbe2df;
+}
+
+.business-edit-button:hover,
+.business-delete-button:hover {
+  transform: translateY(-2px);
+}
+
+.business-edit-button:hover {
+  background: #cce4d5;
+}
+
+.business-delete-button:hover {
+  background: #f6ceca;
+}
+
+/* EMPTY AND FEEDBACK */
+
+.business-empty {
+  padding: 36px 15px;
+  text-align: center;
+  color: #6b7571;
+  font-size: 14px;
+}
+
+.business-success,
+.business-error {
+  margin-bottom: 15px;
+  padding: 12px 15px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.business-success {
+  color: #1c514b;
+  background: #e2f0e6;
+}
+
+.business-error {
+  color: #a32e35;
+  background: #fdecea;
+}
+
+/* MODALS */
+
+.business-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  background: rgba(17, 35, 30, 0.55);
+}
+
+.business-modal {
+  width: 100%;
+  max-width: 510px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 29px;
+  border-radius: 25px;
+  background: #fffaf6;
+  box-shadow: 0 20px 65px rgba(0, 0, 0, 0.24);
+}
+
+.business-modal-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.business-modal-heading h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 800;
+  color: #873c37;
+}
+
+.business-modal-heading p {
+  margin: 6px 0 0;
+  color: #6b7571;
+  font-size: 13px;
+}
+
+.business-close {
+  border: 0;
+  padding: 5px;
+  background: transparent;
+  color: #6b7571;
+  cursor: pointer;
+}
+
+/* EDIT FORM */
+
+.business-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.business-edit-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #1f2a27;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.business-edit-form input,
+.business-edit-form textarea {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #dcd5ce;
+  border-radius: 12px;
+  background: #fdf8f3;
+  color: #1f2a27;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.business-edit-form input:focus,
+.business-edit-form textarea:focus {
+  outline: none;
+  border-color: #1c514b;
+  box-shadow: 0 0 0 3px rgba(28, 81, 75, 0.1);
+}
+
+.business-edit-form input:disabled {
+  background: #eeeae5;
+  color: #85837e;
+}
+
+.business-form-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+/* MODAL BUTTONS */
+
+.business-modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 11px;
+}
+
+.business-cancel-button,
+.business-save-button,
+.business-confirm-delete {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 21px;
+  border-radius: 23px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.business-cancel-button {
+  border: 1px solid #ded7d0;
+  background: #fffaf6;
+  color: #303b35;
+}
+
+.business-save-button {
+  border: 0;
+  background: #1c514b;
+  color: #ffffff;
+}
+
+.business-confirm-delete {
+  border: 0;
+  background: #c7584c;
+  color: white;
+}
+
+/* DELETE DIALOG */
+
+.business-delete-modal {
+  max-width: 430px;
+  text-align: center;
+}
+
+.business-delete-symbol {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background: #fbe3e0;
+  color: #b9343d;
+}
+
+.business-delete-modal h2 {
+  margin: 17px 0 10px;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.business-delete-modal > p {
+  color: #6b7571;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.business-delete-modal .business-modal-buttons {
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.business-modal button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .business-slots-page {
+    padding: 17px 10px;
+  }
+
+  .business-slots-panel {
+    padding: 18px 13px;
+  }
+
+  .business-slots-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .business-slot-filters {
+    gap: 7px;
+  }
+
+  .business-slot-filters .filter {
+    flex: 1;
+    min-width: 0;
+    padding: 10px 7px;
+    font-size: 11px;
+  }
+
+  .business-slot-card {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .business-slot-photo {
+    width: 75px;
+    height: 75px;
+  }
+
+  .business-slot-prices {
+    margin-left: auto;
+  }
+
+  .business-slot-actions {
+    margin-left: auto;
+  }
+
+  .business-form-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .business-modal {
+    padding: 20px;
+  }
+}
